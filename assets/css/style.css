@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;500;700&display=swap');
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: "Barlow", sans-serif;
+    color: #222;
+    background-color: #fff9e5;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 2vh 0;
+}
+
+.menu-links {
+    list-style: none;
+    padding: 0;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh 5vw;
+    text-align: center;
+}
+
+.logo {
+    width: 50%;          /* tamanho pequeno */
+    height: auto;
+    position: fixed;      /* fixa na tela */
+    top: 1.5rem;          /* distância do topo */
+    left: 1.0rem;         /* distância da esquerda */
+    z-index: 1000;        /* fica por cima do resto */
+}
+
+
+.banner-texto p {
+    font-size: 1.6rem;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 2vh;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: 0.1rem solid #333;
+    font-size: 1rem;
+}
+
+/* Cardápio */
+.cardapio {
+    max-width: 45rem;
+    margin: auto;
+    padding: 4vh 5vw;
+}
+
+.cardapio h1 {
+    text-align: center;
+}
+
+.cardapio-categoria {
+    color: #b22222;
+    font-size: 1.3rem;
+    margin-top: 4vh;
+}
+
+.cardapio-item {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2vh;
+}
+
+.cardapio-item img {
+    width: 30vw;
+    max-width: 120px;
+    border-radius: 1rem;
+   
+}
+
+.cardapio-nome {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.cardapio-descricao {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.cardapio-preco {
+    font-size: 1rem;
+    color: #b22222;
+}
+
+/* Footer */
+footer {
+    margin-top: 6vh;
+    background-color: #eb1c1c;
+    color: #fff;
+    text-align: center;
+    padding: 4vh 5vw;
+    font-size: 0.9rem;
+}
+
+/* WhatsApp */
+.link-whatsapp img {
+    width: 3rem;
+    position: fixed;
+    right: 5vw;
+    bottom: 5vh;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    .banner {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .banner-texto {
+        width: 45%;
+    }
+
+    .banner-imagem {
+        width: 45%;
+    }
+}
